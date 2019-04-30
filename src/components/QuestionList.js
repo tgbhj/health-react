@@ -18,10 +18,6 @@ function mapStateToProps(state) {
 }
 
 class QuestionList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         if (this.props.token != null) {
             await this.props.dispatch(getUser(this.props.token));

@@ -31,10 +31,6 @@ function urlChange(e, url, id) {
 }
 
 class IndexDoc extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getDoctors());
         await this.props.dispatch(indexDOC(false));

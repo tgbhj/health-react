@@ -18,10 +18,6 @@ function mapStateToProps(state) {
 }
 
 class Video extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async getVideo() {
         await axios.get('/api/video', {headers: {'id': this.props.match.params.id}})
             .then(res => {

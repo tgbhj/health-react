@@ -17,7 +17,7 @@
     "dotenv-expand": "^5.1.0",
     "dplayer": "^1.25.0",
     "file-loader": "3.0.1",
-    "filepond": "^4.4.0",
+    "filepond": "^4.4.2",
     "filepond-plugin-file-validate-type": "^1.2.4",
     "fs-extra": "7.0.1",
     "hls.js": "^0.12.4",
@@ -67,16 +67,5 @@
     ]
   },
   "proxy": "http://localhost",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": {}
 }

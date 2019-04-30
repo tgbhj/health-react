@@ -10,10 +10,6 @@ function hasErrors(fieldsError) {
 }
 
 class PWStep2 extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {

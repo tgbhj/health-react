@@ -17,10 +17,6 @@ function mapStateToProps(state) {
 }
 
 class InquireForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     onChange = (date, dateString) => {
         this.props.dispatch(addBirthday(dateString))
     };

@@ -44,10 +44,6 @@ function mapStateToProps(state) {
 }
 
 class Doctor extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getDoctor(this.props.match.params.id));
         await this.props.dispatch(doctorLoading(false));

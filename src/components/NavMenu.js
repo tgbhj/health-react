@@ -22,10 +22,6 @@ function mapStateToProps(state) {
 }
 
 class NavMenu extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         if (this.props.token != null) {
             await this.props.dispatch(getUser(this.props.token))

@@ -277,13 +277,10 @@ function delCollect(_this, id) {
 }
 
 class Info extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            collectTheme: 'outlined',
-            likeTheme: 'outlined'
-        }
-    }
+    state = {
+        collectTheme: 'outlined',
+        likeTheme: 'outlined'
+    };
 
     async getInfo() {
         await axios.get('/api/info', {headers: {'id': this.props.match.params.id}})

@@ -4,10 +4,6 @@ import ReChargeForm from '../components/ReChargeForm'
 import ErrorBoundary from '../components/ErrorBoundary'
 
 class ReCharge extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return <Fragment>
             <Row style={{paddingTop: 10}}>

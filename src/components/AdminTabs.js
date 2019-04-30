@@ -39,10 +39,6 @@ function mapStateToProps(state) {
 }
 
 class AdminTabs extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async getUser() {
         await axios.get('/api/user', {headers: {'token': this.props.token}})
             .then(res => {

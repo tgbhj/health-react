@@ -26,10 +26,6 @@ function mapStateToProps(state) {
 }
 
 class ConsultForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async getConsult() {
         return await axios({
             method: 'post', url: '/api/consult', headers: {'token': this.props.token},

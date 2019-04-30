@@ -20,10 +20,6 @@ function mapStateToProps(state) {
 }
 
 class UserInfoForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {

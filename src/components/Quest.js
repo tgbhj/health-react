@@ -25,10 +25,6 @@ function mapStateToProps(state) {
 }
 
 class Quest extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async postQuestion() {
         return await axios({
             method: 'post', url: '/api/question', headers: {'token': this.props.token},

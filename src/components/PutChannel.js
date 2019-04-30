@@ -19,10 +19,6 @@ function mapStateToProps(state) {
 }
 
 class PutForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     putChannel = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {

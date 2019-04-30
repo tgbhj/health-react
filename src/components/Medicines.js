@@ -14,12 +14,9 @@ const mapStateToProps = state => {
 };
 
 class Medicines extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: 1
-        }
-    }
+    state = {
+        current: 1
+    };
 
     async componentDidMount() {
         await this.props.dispatch(getMed(1));

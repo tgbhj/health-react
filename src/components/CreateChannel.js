@@ -17,10 +17,6 @@ function mapStateToProps(state) {
 }
 
 class CreateForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     createChannel = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll((err, values) => {

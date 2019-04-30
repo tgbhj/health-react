@@ -24,12 +24,9 @@ function mapStateToProps(state) {
 }
 
 class Infos extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: 1
-        }
-    }
+    state = {
+        current: 1
+    };
 
     async componentDidMount() {
         await this.props.dispatch(getInformations(1));

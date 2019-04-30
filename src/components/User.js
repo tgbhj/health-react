@@ -45,13 +45,10 @@ function mapStateToProps(state) {
 }
 
 class User extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: 0,
-            phone: 0
-        }
-    }
+    state = {
+        current: 0,
+        phone: 0
+    };
 
     async componentDidMount() {
         if (this.props.token != null) {

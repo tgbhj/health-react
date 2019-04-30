@@ -13,10 +13,6 @@ function mapStateToProps(state) {
 }
 
 class IndexChannels extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getChannels());
         await this.props.dispatch(indexChannels(false));

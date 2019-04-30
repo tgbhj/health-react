@@ -9,13 +9,10 @@ function hasErrors(fieldsError) {
 }
 
 class Reg extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            disabled: false,
-            second: 60
-        }
-    }
+    state = {
+        disabled: false,
+        second: 60
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();

@@ -2,10 +2,6 @@ import React from 'react'
 import {Button} from 'antd'
 
 class PayMent extends React.Component {
-    constructor(pros) {
-        super(pros);
-    }
-
     handleClick = () => {
         window.location.href = 'http://222.73.36.73:8080/api/payment?userId=' + this.props.userId;
     };

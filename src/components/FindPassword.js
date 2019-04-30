@@ -7,13 +7,10 @@ import ErrorBoundary from '../components/ErrorBoundary'
 const Step = Steps.Step;
 
 class FindPassword extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: 0,
-            phone: 1
-        }
-    }
+    state = {
+        current: 0,
+        phone: 1
+    };
 
     handleCurrent(val) {
         this.setState({current: val})

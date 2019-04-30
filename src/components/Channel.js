@@ -19,10 +19,6 @@ function mapStateToProps(state) {
 }
 
 class Channel extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async getChannel() {
         await axios.get('/api/channel', {headers: {'id': this.props.match.params.id}})
             .then(res => {

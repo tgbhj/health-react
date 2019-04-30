@@ -23,10 +23,6 @@ function mapStateToProps(state) {
 }
 
 class IndexInfo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getInfo());
         await this.props.dispatch(indexInfo(false));

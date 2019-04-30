@@ -13,10 +13,6 @@ function mapStateToProps(state) {
 }
 
 class IndexVideos extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getVideos());
         await this.props.dispatch(indexVideos(false));

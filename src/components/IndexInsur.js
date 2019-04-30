@@ -10,10 +10,6 @@ function mapStateToProps(state) {
 }
 
 class IndexInsur extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getInsure())
     }

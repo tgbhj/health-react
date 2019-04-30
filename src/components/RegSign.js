@@ -15,10 +15,6 @@ function mapStateToProps(state) {
 }
 
 class RegSign extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return <Fragment>
             <Button type="danger" onClick={() => this.props.dispatch(userDialog(true))}>登录</Button>

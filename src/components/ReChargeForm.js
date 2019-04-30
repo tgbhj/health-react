@@ -20,10 +20,6 @@ function mapStateToProps(state) {
 }
 
 class ReChargeForm extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFieldsAndScroll(async (err, values) => {

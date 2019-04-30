@@ -9,14 +9,11 @@ function hasErrors(fieldsError) {
 }
 
 class PWStep1 extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            phone: 0,
-            disabled: false,
-            second: 60
-        }
-    }
+    state = {
+        phone: 0,
+        disabled: false,
+        second: 60
+    };
 
     handleSubmit = (e) => {
         e.preventDefault();

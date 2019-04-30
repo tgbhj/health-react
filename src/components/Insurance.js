@@ -22,33 +22,30 @@ function mapStateToProps(state) {
 }
 
 class Insurance extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            radio: 'B',
-            current: 0,
-            table: [
-                {
-                    id: 1,
-                    name: '一般医疗保险金',
-                    money: '3,000,000',
-                    content: '住院医疗，特殊门诊，住院前7天后30天门急诊，门诊手术100%给付'
-                },
-                {
-                    id: 2,
-                    name: '恶性肿瘤医疗保险金',
-                    money: '3,000,000',
-                    content: '住院医疗，特殊门诊，住院前7天后30天门急诊，门诊手术100%给付'
-                },
-                {
-                    id: 3,
-                    name: '意外伤害住院津贴',
-                    money: '18,000',
-                    content: '100元/天（每次住院免赔3天，每次最长90天，每个保险年度不超过180天）'
-                }
-            ]
-        }
-    }
+    state = {
+        radio: 'B',
+        current: 0,
+        table: [
+            {
+                id: 1,
+                name: '一般医疗保险金',
+                money: '3,000,000',
+                content: '住院医疗，特殊门诊，住院前7天后30天门急诊，门诊手术100%给付'
+            },
+            {
+                id: 2,
+                name: '恶性肿瘤医疗保险金',
+                money: '3,000,000',
+                content: '住院医疗，特殊门诊，住院前7天后30天门急诊，门诊手术100%给付'
+            },
+            {
+                id: 3,
+                name: '意外伤害住院津贴',
+                money: '18,000',
+                content: '100元/天（每次住院免赔3天，每次最长90天，每个保险年度不超过180天）'
+            }
+        ]
+    };
 
     onChange = (e) => {
         this.setState({radio: e.target.value})

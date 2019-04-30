@@ -13,10 +13,6 @@ function mapStateToProps(state) {
 }
 
 class IndexMed extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     async componentDidMount() {
         await this.props.dispatch(getMed());
         await this.props.dispatch(indexMed(false));

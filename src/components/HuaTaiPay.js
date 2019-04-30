@@ -2,10 +2,6 @@ import React from 'react'
 import {Button, Card, Row, Col} from 'antd'
 
 class HuaTaiPay extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     back = () => {
         window.location.href = '/'
     };
