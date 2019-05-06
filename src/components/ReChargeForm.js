@@ -47,7 +47,6 @@ class ReChargeForm extends React.Component {
                             body: '积分充值',
                             user_id: this.props.match.params.id
                         }).then(res => {
-                            console.log(res.data);
                             if (res.data.status === 'success') {
                                 this.props.dispatch(wxQrcode(res.data.qrcode));
                                 this.props.dispatch(qrcodeDialog(true));

@@ -19,7 +19,9 @@ function login() {
             <Link to='/'>
                 <img src={logo} className="logo"/>
             </Link>
-            <NavMenu/>
+            <ErrorBoundary>
+                <NavMenu/>
+            </ErrorBoundary>
         </Header>
         <Content className="content">
             <Tabs defaultActiveKey="1">
@@ -47,7 +49,9 @@ function login() {
             <Back/>
         </Content>
         <Footer className="footer">
-            <Foot/>
+            <ErrorBoundary>
+                <Foot/>
+            </ErrorBoundary>
         </Footer>
     </Layout>
 }

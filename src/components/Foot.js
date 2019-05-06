@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row, Col, Icon} from 'antd'
+import {Row, Col} from 'antd'
 
 class Foot extends React.Component {
     render() {
@@ -12,13 +12,7 @@ class Foot extends React.Component {
                     <a href="https://www.seei.tv" target='_blank'><span>嘻爱网直播平台</span></a>
                 </Col>
                 <Col span={24}>
-                    <a href="http://www.adinno.org/" target='_blank'><span>上海港聚信息科技有限公司</span></a>
-                </Col>
-                <Col span={24}>
-                    <a href="/" target='_blank'><span>嘻爱健康下载中心</span></a>
-                </Col>
-                <Col span={24}>
-                    <a href="/" target='_blank'><span>关于我们</span></a>
+                    <a href="http://www.adinno.org" target='_blank'><span>上海港聚信息科技有限公司</span></a>
                 </Col>
             </Col>
             <Col xs={24} sm={8} md={8} lg={8} xl={8} xxl={8}>
@@ -37,7 +31,7 @@ class Foot extends React.Component {
                     <span>客服电话</span>
                 </Col>
                 <Col span={24}>
-                    <Icon type="phone"/><span>021-55229560</span>
+                    <span>021-55229560</span>
                 </Col>
             </Col>
             <Col span={24} style={{paddingTop: 5}}>

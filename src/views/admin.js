@@ -28,7 +28,9 @@ function admin() {
             <Back/>
         </Content>
         <Footer className="footer">
-            <Foot/>
+            <ErrorBoundary>
+                <Foot/>
+            </ErrorBoundary>
         </Footer>
     </Layout>
 }

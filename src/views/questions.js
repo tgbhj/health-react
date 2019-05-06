@@ -17,7 +17,9 @@ function questions() {
             <Link to='/'>
                 <img src={logo} className="logo"/>
             </Link>
-            <NavMenu/>
+            <ErrorBoundary>
+                <NavMenu/>
+            </ErrorBoundary>
         </Header>
         <Content className="content">
             <ErrorBoundary>
@@ -26,7 +28,9 @@ function questions() {
             <Back/>
         </Content>
         <Footer className="footer">
-            <Foot/>
+            <ErrorBoundary>
+                <Foot/>
+            </ErrorBoundary>
         </Footer>
     </Layout>
 }

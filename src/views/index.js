@@ -26,12 +26,16 @@ function index() {
             <Link to='/'>
                 <img src={logo} className="logo"/>
             </Link>
-            <NavMenu/>
+            <ErrorBoundary>
+                <NavMenu/>
+            </ErrorBoundary>
         </Header>
         <Content className="content">
             <Row>
                 <Col span={22} offset={1}>
-                    <Carousels/>
+                    <ErrorBoundary>
+                        <Carousels/>
+                    </ErrorBoundary>
                     <ErrorBoundary>
                         <IndexQuest/>
                     </ErrorBoundary>
@@ -60,7 +64,9 @@ function index() {
             <Back/>
         </Content>
         <Footer className="footer">
-            <Foot/>
+            <ErrorBoundary>
+                <Foot/>
+            </ErrorBoundary>
         </Footer>
     </Layout>
 }
