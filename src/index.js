@@ -7,7 +7,7 @@ import Routers from './router/index'
 import todoApp from './reducers/index'
 import * as serviceWorker from './serviceWorker'
 
-let store = createStore(todoApp, applyMiddleware(thunkMiddleware)); // 允许我们 dispatch() 函数
+let store = createStore(todoApp, applyMiddleware(thunkMiddleware)); // 允许我们dispatch()函数
 
 render(
     <Provider store={store}>
