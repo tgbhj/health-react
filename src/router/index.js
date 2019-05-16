@@ -18,9 +18,6 @@ import question from '../views/question'
 import findpwd from '../views/findpwd'
 import insurance from '../views/insurance'
 import recharge from '../views/recharge'
-import provision1 from '../views/provision1'
-import provision2 from '../views/provision2'
-import list1 from '../views/list1'
 import agreement from '../views/agreement'
 import pay from '../views/pay'
 import notfound from '../views/notfound'
@@ -60,9 +57,6 @@ const Routers = () => (
             <Route exact path='/findPassword' component={findpwd}/>
             <PrivateRoute exact path='/recharge/:id' component={recharge}/>
             <Route exact path='/insurance' component={insurance}/>
-            <Route exact path='/provision1' component={provision1}/>
-            <Route exact path='/provision2' component={provision2}/>
-            <Route exact path='/list1' component={list1}/>
             <Route exact path='/agreement' component={agreement}/>
             <Route exact path='/pay' component={pay}/>
             <Route component={notfound}/>

@@ -128,12 +128,12 @@ class Insurance extends React.Component {
                     <p>由华泰财产保险有限公司承保,公司经营区域:北京、上海、天津、重庆、江苏、广东、陕西、四川、云南、辽宁、浙江、河北、湖南、湖北、安徽、山西、福建、山东、广西、河南、江西、深圳、青岛、大连、宁波、贵州、内蒙、厦门、黑龙江、新疆</p>
                     <h3>1.阅读条款</h3>
                     <p>投保前请您认真阅读本保险计划的适用条款：
-                        <Link to="/provision1">
+                        <a href="http://shop.ehuatai.com/events/237/华泰财险个人中高端医疗费用保险条款.html">
                             <label className="in-label">《华泰财险个人中高端医疗费用保险条款》</label>
-                        </Link>
-                        <Link to="/provision2">
+                        </a>
+                        <a href="http://shop.ehuatai.com/events/236/华泰（备案）[2009]N20号-附加意外伤害住院津贴保险条款.html">
                             <label className="in-label">《附加意外伤害住院津贴保险条款》</label>
-                        </Link>
+                        </a>
                         ，特别留意保险责任及除外责任以及投保人、被保险人如实告知义务。
                     </p>
                     <h3>2.投保人</h3>
@@ -168,15 +168,15 @@ class Insurance extends React.Component {
                     <p>投保人/被保险人选择投保本产品成功后即认为投保人/被保险人认可华泰保险提供的免费重大疾病绿色通道+国内二次诊疗+住院垫付服务，同意华泰保险将保单信息提供给指定的第三方服务机构，以便保证在您需要的时候可以快速有效的给您提供服务。</p>
                     <h3>11</h3>
                     <p>免费重大疾病绿色通道+国内二次诊疗+住院垫付服务的重大疾病范围详见
-                        <Link to="/list1">
+                        <a href="http://shop.ehuatai.com/events/259/百万医疗重大疾病绿通服务重大疾病清单.html">
                             <label className="in-label">《重大疾病清单》</label>
-                        </Link>、
+                        </a>、
                         <a
-                            href="http://shop.ehuatai.com/events/262/%E9%87%8D%E7%96%BE%E7%BB%BF%E9%80%9A%E5%8C%BB%E9%99%A2%E6%B8%85%E5%8D%95.html">
+                            href="http://shop.ehuatai.com/events/262/重疾绿通医院清单.html">
                             <label className="in-label">《重疾绿通医院清单》</label>
                         </a>、
                         <a
-                            href="http://shop.ehuatai.com/events/263/%E5%9E%AB%E4%BB%98%E5%8C%BB%E9%99%A2%E6%B8%85%E5%8D%95.html">
+                            href="http://shop.ehuatai.com/events/263/垫付医院清单.html">
                             <label className="in-label">《垫付医院清单》</label>
                         </a>。
                     </p>
