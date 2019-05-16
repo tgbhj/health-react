@@ -25,7 +25,6 @@ class CreateForm extends React.Component {
                     title: this.props.form.getFieldValue('title'),
                     detail: this.props.form.getFieldValue('detail')
                 }, {headers: {token: this.props.token}}).then(res => {
-                    console.log(res.data);
                     if (res.data.code === 20000) {
                         notification.success({
                             message: '创建成功',
