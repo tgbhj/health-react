@@ -4,7 +4,7 @@ import Step1 from './PWStep1'
 import Step2 from './PWStep2'
 import ErrorBoundary from '../components/ErrorBoundary'
 
-const Step = Steps.Step;
+const {Step} = Steps;
 
 class FindPassword extends React.Component {
     state = {

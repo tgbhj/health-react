@@ -6,7 +6,7 @@ import {userDialog} from '../actions/user_ui'
 import {connect} from 'react-redux'
 import ErrorBoundary from '../components/ErrorBoundary'
 
-const TabPane = Tabs.TabPane;
+const {TabPane} = Tabs;
 
 function mapStateToProps(state) {
     return {

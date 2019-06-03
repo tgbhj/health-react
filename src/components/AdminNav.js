@@ -12,7 +12,7 @@ const style = {
     height: '64px'
 };
 
-const SubMenu = Menu.SubMenu;
+const {SubMenu} = Menu;
 
 function mapStateToProps(state) {
     return {

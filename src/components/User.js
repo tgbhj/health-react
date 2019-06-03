@@ -13,8 +13,8 @@ import ErrorBoundary from '../components/ErrorBoundary'
 import moment from 'moment'
 
 const Panel = Collapse.Panel;
-const TabPane = Tabs.TabPane;
-const Step = Steps.Step;
+const {TabPane} = Tabs;
+const {Step} = Steps;
 const {Column} = Table;
 const {Paragraph} = Typography;
 
