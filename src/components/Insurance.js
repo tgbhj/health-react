@@ -10,8 +10,8 @@ import {connect} from 'react-redux'
 
 const RadioButton = Radio.Button;
 const RadioGroup = Radio.Group;
-const Step = Steps.Step;
-const TabPane = Tabs.TabPane;
+const {Step} = Steps;
+const {TabPane} = Tabs;
 const {Column} = Table;
 
 function mapStateToProps(state) {
