@@ -249,7 +249,7 @@ module.exports = function (webpackEnv) {
         // please link the files into your node_modules/ and let module-resolution kick in.
         // Make sure your source files are compiled, as they will not be processed in any way.
         new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson])
-      ],
+      ]
     },
     resolveLoader: {
       plugins: [
@@ -263,9 +263,6 @@ module.exports = function (webpackEnv) {
       rules: [
         // Disable require.ensure as it's not a standard language feature.
         { parser: { requireEnsure: false } },
-
-        // First, run the linter.
-        // It's important to do this before Babel processes the JS.
 
         {
           // "oneOf" will traverse all following loaders until one will
@@ -519,8 +516,7 @@ module.exports = function (webpackEnv) {
       new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
       // Generate a service worker script that will precache, and keep up to date,
       // the HTML & assets that are part of the Webpack build.
-      isEnvProduction &&
-      new WorkboxWebpackPlugin.GenerateSW({
+      isEnvProduction && new WorkboxWebpackPlugin.GenerateSW({
         clientsClaim: true,
         exclude: [/\.map$/, /asset-manifest\.json$/],
         importWorkboxFrom: 'cdn',
