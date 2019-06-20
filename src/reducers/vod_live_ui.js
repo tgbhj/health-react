@@ -12,7 +12,7 @@ const initialState = {
     channel_player: null,
     videos_loading: true,
     video_player: null,
-    channels_idnex: [],
+    channels_index: [],
     videos_index: []
 };
 
@@ -27,7 +27,7 @@ export function vodliveUi(state = initialState, action) {
         case VIDEO_PLAYER:
             return {...state, video_player: action.video_player};
         case CHANNELS_INDEX:
-            return {...state, channels_idnex: action.channels_idnex};
+            return {...state, channels_index: action.channels_index};
         case VIDEOS_INDEX:
             return {...state, videos_index: action.videos_index};
         default:

@@ -9,7 +9,7 @@ function mapStateToProps(state) {
     return {
         channels: state.vodliveTodo.channels,
         channels_loading: state.vodliveUi.channels_loading,
-        channels_idnex: state.vodliveUi.channels_idnex
+        channels_index: state.vodliveUi.channels_index
     }
 }
 
@@ -40,7 +40,7 @@ class Channels extends React.Component {
                 </Row>
                 <Row gutter={10} style={{paddingTop: 10}}>
                     {
-                        this.props.channels_idnex.map(item => {
+                        this.props.channels_index.map(item => {
                             return <Col xs={12} sm={6} md={6} lg={6} xl={6} xxl={6} key={item._id}
                                         style={{paddingBottom: 5}}>
                                 <Link to={'/channel/' + item._id}>
