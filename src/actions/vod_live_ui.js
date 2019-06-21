@@ -24,8 +24,8 @@ export function videosLoading(videos_loading) {
 
 export const CHANNELS_INDEX = 'CHANNELS_INDEX';
 
-export const channelsIndex = channels_idnex => ({
-    type: CHANNELS_INDEX, channels_idnex: channels_idnex
+export const channelsIndex = channels_index => ({
+    type: CHANNELS_INDEX, channels_index: channels_index
 });
 
 export const VIDEOS_INDEX = 'VIDEOS_INDEX';
