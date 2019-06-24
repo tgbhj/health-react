@@ -8,8 +8,8 @@ import {connect} from 'react-redux'
 const {Meta} = Card;
 const IconText = ({type, text, url, id}) => (
     <span>
-    <Icon type={type} onClick={(e) => urlChange(e, url, id)}/>
-    <Button onClick={(e) => urlChange(e, url, id)} style={{
+    <Icon type={type} onClick={() => urlChange(url, id)}/>
+    <Button onClick={() => urlChange(url, id)} style={{
         backgroundColor: '#fafafa',
         borderColor: '#fafafa',
         fontSize: 16,
@@ -19,7 +19,7 @@ const IconText = ({type, text, url, id}) => (
   </span>
 );
 
-function urlChange(e, url, id) {
+function urlChange(url, id) {
     window.location.href = url + id
 }
 

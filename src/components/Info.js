@@ -13,8 +13,8 @@ const {Meta} = Card;
 
 const StarIcon = ({type, text, id, _this, theme}) => (
     <span>
-    <Icon type={type} theme={theme} onClick={(e) => collect(e, _this, id)} style={{color: '#FFD700'}}/>
-    <Button onClick={(e) => collect(e, _this, id)} style={{
+    <Icon type={type} theme={theme} onClick={() => collect(_this, id)} style={{color: '#FFD700'}}/>
+    <Button onClick={() => collect(_this, id)} style={{
         backgroundColor: '#fafafa',
         borderColor: '#fafafa',
         fontSize: 16,
@@ -26,8 +26,8 @@ const StarIcon = ({type, text, id, _this, theme}) => (
 
 const LikeText = ({type, text, id, _this, theme}) => (
     <span>
-    <Icon type={type} theme={theme} onClick={(e) => like(e, _this, id)} style={{color: '#FF0000'}}/>
-    <Button onClick={(e) => like(e, _this, id)} style={{
+    <Icon type={type} theme={theme} onClick={() => like(_this, id)} style={{color: '#FF0000'}}/>
+    <Button onClick={() => like(_this, id)} style={{
         backgroundColor: '#fafafa',
         borderColor: '#fafafa',
         fontSize: 16,
@@ -60,7 +60,7 @@ function mapStateToProps(state) {
     }
 }
 
-async function like(e, _this, id) {
+async function like(_this, id) {
     if (_this.state.likeTheme === 'outlined') {
         await userLike(_this, id);
         await infoLike(_this, id);
@@ -168,7 +168,7 @@ function delLike(_this, id) {
     }
 }
 
-async function collect(e, _this, id) {
+async function collect(_this, id) {
     if (_this.state.collectTheme === 'outlined') {
         await userCollect(_this, id);
         await infoCollect(_this, id);
@@ -181,7 +181,7 @@ async function collect(e, _this, id) {
 function userCollect(_this, id) {
     if (_this.props.token != null) {
         axios.post('/api/userCollect', {infoId: id}, {headers: {'token': _this.props.token}})
-            .then(res => {
+            .then(() => {
                 _this.props.dispatch(getUser(_this.props.token))
             })
             .catch(err => {
@@ -230,7 +230,7 @@ function infoCollect(_this, id) {
 function delUserCollect(_this, id) {
     if (_this.props.token != null) {
         axios.post('/api/delUserCollect', {infoId: id}, {headers: {'token': _this.props.token}})
-            .then(res => {
+            .then(() => {
                 _this.props.dispatch(getUser(_this.props.token))
             })
             .catch(err => {
