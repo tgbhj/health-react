@@ -4,7 +4,7 @@ import RegForm from './Reg'
 import SignForm from './Sign'
 import {userDialog} from '../actions/user_ui'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 const {TabPane} = Tabs;
 

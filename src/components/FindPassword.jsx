@@ -2,7 +2,7 @@ import React from 'react'
 import {Row, Col, Divider, Steps} from 'antd'
 import Step1 from './PWStep1'
 import Step2 from './PWStep2'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 const {Step} = Steps;
 

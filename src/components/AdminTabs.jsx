@@ -16,7 +16,7 @@ import {
 import axios from 'axios'
 import {addUser} from '../actions/user'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 const {Column} = Table;
 const {TabPane} = Tabs;

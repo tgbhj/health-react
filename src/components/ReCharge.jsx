@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react'
 import {Row, Col} from 'antd'
-import ReChargeForm from '../components/ReChargeForm'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ReChargeForm from './ReChargeForm'
+import ErrorBoundary from './ErrorBoundary'
 
 class ReCharge extends React.Component {
     render() {

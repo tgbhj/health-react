@@ -6,7 +6,7 @@ import {getQuestion} from '../actions/question'
 import {questionLoading} from '../actions/question_ui'
 import {getUser} from '../actions/user'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 import moment from 'moment'
 
 const {Meta} = Card;

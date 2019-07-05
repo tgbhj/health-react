@@ -5,7 +5,7 @@ import QuestionList from './QuestionList'
 import Doctors from './Doctors'
 import {getUser} from '../actions/user'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 const {TabPane} = Tabs;
 

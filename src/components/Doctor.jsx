@@ -5,7 +5,7 @@ import Consult from './Consult'
 import {getDoctor} from '../actions/doctor'
 import {doctorLoading, doctorDialog} from '../actions/doctor_ui'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 
 const {Meta} = Card;
 

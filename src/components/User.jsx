@@ -9,7 +9,7 @@ import CreateChannel from './CreateChannel'
 import PutChannel from './PutChannel'
 import {getUser, getPolicy, getQuestions, getUserInfo, getUserChannel} from '../actions/user'
 import {connect} from 'react-redux'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from './ErrorBoundary'
 import moment from 'moment'
 
 const Panel = Collapse.Panel;
